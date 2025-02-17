@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Next.js Tutorial - README
 
-## Getting Started
+## Over dit project
 
-First, run the development server:
+Dit project bevat de code die is ontwikkeld tijdens een **React Next.js tutorial**. Het is bedoeld als een leerhulpmiddel voor het begrijpen van de basisprincipes van Next.js en React.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Functionaliteiten
+
+- Server-side rendering (SSR) en statische sitegeneratie (SSG)
+- Dynamische en statische pagina's
+- API-routes in Next.js
+- Gebruik van React-componenten
+- Navigatie met Next.js Router
+
+## Vereisten
+
+Zorg ervoor dat je de volgende software op je systeem hebt geïnstalleerd:
+
+- [Node.js](https://nodejs.org/) (aanbevolen versie: LTS)
+- npm&#x20;
+
+## Installatie
+
+1. **Clone de repository**
+   ```sh
+   git clone <repository-url>
+   cd <project-folder>
+   ```
+2. **Installeer de dependencies**
+   ```sh
+   npm install
+   ```
+
+## Project starten
+
+Om de development-server te starten, gebruik:
+
+```sh
+npm run dev  
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Het project is dan beschikbaar op [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Het wordt ook gehost op [https://semester-3-v3.vercel.app/ ](https://semester-3-v3.vercel.app/ )
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Structuur van het project
 
-## Learn More
+```
+/project-root
+│-- app/          # Next.js pagina's en layout
+│-- comps/     # Herbruikbare React-componenten
+│-- public/         # Statische assets
+│-- styles/        # CSS modules en stijlen
+│-- package.json    # Projectconfiguratie en dependencies
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Extra informatie
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Dit project is gebaseerd op een tutorial van nextjs samen net uit leg van Vercel hosting.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
