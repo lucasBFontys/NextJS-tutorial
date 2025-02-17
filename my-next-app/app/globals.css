@@ -24,7 +24,9 @@ body {
 
 body {
   margin: 0;
-  font-family: "Poppins";
+  font-family: "Poppins", Arial,
+    Helvetica,
+    sans-serif;
   background: #f5f5f5;
 }
 
