@@ -1,4 +1,4 @@
-import Header from "./comps/Header/page.jsx";
+import Header from "./comps/Header/header.jsx";
 import "./globals.css";
 
 export const metadata = {
