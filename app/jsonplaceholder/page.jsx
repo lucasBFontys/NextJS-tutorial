@@ -45,7 +45,7 @@ export default function ShowcasePage() {
         <main>
             <div className="p-6">
 
-                <h1 className="text-2xl font-bold mb-4">Data</h1>
+                <h1 className="text-2xl font-bold mb-4">Dummy Data van uit een Jsonplaceholder URL</h1>
 
                 <ul>
                     {data.map((user) => (

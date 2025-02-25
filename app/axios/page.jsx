@@ -4,18 +4,18 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function ShowcasePage() {
-    const [projects, setProjects] = useState([]);
+    const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
         axios
-            .get("https://jsonplaceholder.typicode.com/posts?_limit=5")
+            .get("/efteling.json")
             .then((response) => {
-                setProjects(response.data);
+                setData(response.data);
                 setLoading(false);
             })
-            .catch((error) => {
+            .catch(() => {
                 setError("Fout bij ophalen van data");
                 setLoading(false);
             });
@@ -29,31 +29,44 @@ export default function ShowcasePage() {
                     <p className="text-blue-500">Data wordt geladen...</p>
                 </div>
             </main>
-        )
+        );
     }
 
     if (error) {
-        return (
-            <p className="text-red-500">{error}</p>
-        )
+        return <p className="text-red-500">{error}</p>;
     }
 
+    if (!data) {
+        return <p className="text-red-500">Geen data beschikbaar</p>;
+    }
 
     return (
-        <main>
-            <div className="p-6">
-                <h1 className="text-2xl font-bold mb-4">Data</h1>
+        <main className="p-6">
+            <h1 className="text-2xl font-bold mb-4">Efteling Informatie(lokale data)</h1>
+            <p><strong>Locatie:</strong> {data.locatie}</p>
 
-                <ul>
-                    {projects.map((project) => (
-                        <li key={project.id} className="border p-4 mb-2 rounded-lg bg-white shadow">
-                            <h2 className="text-lg font-semibold">{project.title}</h2>
-                            <p>{project.body}</p>
-                        </li>
-                    ))}
-                </ul>
+            <h2 className="text-xl font-semibold mt-4">Openingstijden</h2>
+            <ul className="list-disc ml-5">
+                {Object.entries(data.openingstijden).map(([dag, tijd]) => (
+                    <li key={dag}><strong>{dag}:</strong> {tijd}</li>
+                ))}
+            </ul>
 
-            </div>
+            <h2 className="text-xl font-semibold mt-4">Attracties</h2>
+            <ul>
+                {data.attracties.map((attractie) => (
+                    <li key={attractie.id} className="border p-4 mb-2 rounded-lg bg-white shadow">
+                        <h3 className="text-lg font-semibold">{attractie.naam}</h3>
+                        <p><strong>Type:</strong> {attractie.type}</p>
+                        <p><strong>Minimale lengte:</strong> {attractie.minimale_lengte}</p>
+                        <p><strong>Wachttijd:</strong> {attractie.wachttijd}</p>
+                    </li>
+                ))}
+            </ul>
+
+            <h2 className="text-xl font-semibold mt-4">Contact</h2>
+            <p><strong>Telefoon:</strong> {data.contact.telefoon}</p>
+            <p><a href={data.contact.website} className="text-blue-500">Website</a></p>
         </main>
     );
 }

@@ -1,0 +1,80 @@
+{
+    "park": "Efteling",
+    "locatie": "Kaatsheuvel, Nederland",
+    "openingstijden": {
+        "maandag": "10:00 - 18:00",
+        "dinsdag": "10:00 - 18:00",
+        "woensdag": "10:00 - 18:00",
+        "donderdag": "10:00 - 18:00",
+        "vrijdag": "10:00 - 22:00",
+        "zaterdag": "10:00 - 22:00",
+        "zondag": "10:00 - 22:00"
+    },
+    "attracties": [
+        {
+            "id": 1,
+            "naam": "Baron 1898",
+            "type": "Achtbaan",
+            "minimale_lengte": "1.40m",
+            "wachttijd": "30 min"
+        },
+        {
+            "id": 2,
+            "naam": "Droomvlucht",
+            "type": "Darkride",
+            "minimale_lengte": "Geen beperking",
+            "wachttijd": "20 min"
+        },
+        {
+            "id": 3,
+            "naam": "Python",
+            "type": "Achtbaan",
+            "minimale_lengte": "1.20m",
+            "wachttijd": "40 min"
+        },
+        {
+            "id": 4,
+            "naam": "Vogel Rok",
+            "type": "Indoor Achtbaan",
+            "minimale_lengte": "1.20m",
+            "wachttijd": "35 min"
+        },
+        {
+            "id": 5,
+            "naam": "Fata Morgana",
+            "type": "Darkride",
+            "minimale_lengte": "Geen beperking",
+            "wachttijd": "25 min"
+        },
+        {
+            "id": 6,
+            "naam": "Joris en de Draak",
+            "type": "Houten Achtbaan",
+            "minimale_lengte": "1.10m",
+            "wachttijd": "45 min"
+        }
+    ],
+    "restaurants": [
+        {
+            "naam": "Het Witte Paard",
+            "type": "Buffetrestaurant",
+            "specialiteiten": [
+                "Pannenkoeken",
+                "Friet",
+                "IJs"
+            ]
+        },
+        {
+            "naam": "Polles Keuken",
+            "type": "Pannenkoekenrestaurant",
+            "specialiteiten": [
+                "Zoete pannenkoeken",
+                "Hartige pannenkoeken"
+            ]
+        }
+    ],
+    "contact": {
+        "telefoon": "+31 416 537 777",
+        "website": "https://www.efteling.com"
+    }
+}
