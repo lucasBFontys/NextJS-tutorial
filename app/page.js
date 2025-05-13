@@ -8,7 +8,7 @@ export default function Home() {
         <Image src={heroImage} alt="hero image" width={700} height={400} />
 
         <div className="welcome">
-          <h2>Introduction to Next.js</h2>
+          <h2>Introductie to Next.js</h2>
           <p>
             Next.js is a React framework that enables server-side rendering,
             static site generation, and full-stack capabilities for building
