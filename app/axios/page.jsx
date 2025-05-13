@@ -42,7 +42,7 @@ export default function ShowcasePage() {
 
     return (
         <main className="p-6">
-            <h1 className="text-2xl font-bold mb-4">Efteling Informatie(lokale data)</h1>
+            <h1 className="text-2xl font-bold mb-4">Efteling Informatie (lokale data)</h1>
             <p><strong>Locatie:</strong> {data.locatie}</p>
 
             <h2 className="text-xl font-semibold mt-4">Openingstijden</h2>
